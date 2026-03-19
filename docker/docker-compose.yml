@@ -1,0 +1,15 @@
+services:
+  rpa-recaptcha:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+      BROWSER: chrome
+      HEADLESS: "true"
+      ATTEMPTS: "10"
+      INTERVAL_SECONDS: "4"
+      LOG_LEVEL: INFO
+      ALLOW_MANUAL_SOLVE: "false"
+      CHALLENGE_WAIT_SECONDS: "60"
+    volumes:
+      - ../logs:/app/logs
