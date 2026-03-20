@@ -122,3 +122,6 @@ Edite `docker-compose.yml` em `environment:` (por exemplo `HEADLESS: "false"`, a
 ## Licença de uso
 
 Este código é para **estudo e avaliação técnica**. Respeite os [Termos de Serviço](https://policies.google.com/terms) do Google e políticas de sites alvo. Não use para contornar proteções em produção sem autorização.
+
+# rpa_recaptcha
+Projeto de automação em Python para o case técnico de reCAPTCHA v2, com Selenium, tratamento de falhas, logs e execução local ou via Docker.
